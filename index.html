@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Découvrez le Togo - Destination touristique d'Afrique de l'Ouest. Plages paradisiaques, culture vibrante, et hospitalité légendaire.">
+    <title>Découvrez le Togo | Tourisme Togo - La Perle de l'Afrique de l'Ouest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <span class="loader-text">TOGO</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🇹🇬</span>
+                <span class="logo-text">Togo<span class="logo-accent">Tourisme</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#culture" class="nav-link">Culture</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                🌗
+            </button>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">✨</span>
+                <span>Bienvenue au Togo</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Découvrez le <span style="color: #e63946;">Togo</span></span>
+                <span class="title-line accent">la Perle de l'Afrique</span>
+                <span class="title-line">de l'Ouest</span>
+            </h1>
+            <p class="hero-subtitle">Un voyage inoubliable vous attend entre plages dorées, montagnes verdoyantes, et
+                une culture millénaire pleine de chaleur et d'authenticité.</p>
+            <div class="hero-cta">
+                <a href="#destinations" class="btn btn-primary">
+                    <span>Explorer</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span class="play-icon">▶</span>
+                    <span>En savoir plus</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll"><span>Défiler</span>
+            <div class="scroll-line"></div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item"><span class="stat-number" data-count="56">0</span><span class="stat-suffix">K
+                    km²</span><span class="stat-label">Superficie</span></div>
+            <div class="stat-item"><span class="stat-number" data-count="10">0</span><span
+                    class="stat-suffix">M</span><span class="stat-label">Habitants</span></div>
+            <div class="stat-item"><span class="stat-number" data-count="40">0</span><span
+                    class="stat-suffix">+</span><span class="stat-label">Ethnies</span></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img about-img-1"><img src="images/about-1.jpg" alt="Paysage du Togo">
+                    </div>
+                    <div class="about-img about-img-2"><img src="images/about-2.jpg" alt="Culture togolaise"></div>
+                    <div class="about-floating-card"><span class="floating-number">2+</span><span
+                            class="floating-text">années d'expérience</span></div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">À Propos</span>
+                    <h2 class="section-title">Un pays aux mille richesses</h2>
+                    <p class="about-text">Le Togo, petit pays d'Afrique de l'Ouest, offre une diversité étonnante de
+                        paysages et d'expériences. Des plages de sable fin du littoral aux montagnes verdoyantes de
+                        Kpalimé.</p>
+                    <p class="about-text">Réputé pour l'hospitalité légendaire de ses habitants et sa culture vaudou
+                        fascinante, le Togo vous invite à vivre des moments authentiques.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🏖️</div>
+                            <div class="feature-text">
+                                <h4>Plages Paradisiaques</h4>
+                                <p>Des côtes préservées et authentiques</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌿</div>
+                            <div class="feature-text">
+                                <h4>Nature Luxuriante</h4>
+                                <p>Forêts tropicales et cascades</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎭</div>
+                            <div class="feature-text">
+                                <h4>Culture Vivante</h4>
+                                <p>Traditions ancestrales préservées</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Destinations</span>
+                <h2 class="section-title">Explorez nos merveilles</h2>
+                <p class="section-desc">Des lieux exceptionnels qui vous laisseront des souvenirs impérissables</p>
+            </div>
+            <div class="destinations-grid">
+                <article class="destination-card destination-featured">
+                    <div class="card-image"><img src="images/destination-1.jpg" alt="Lomé">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content"><span class="card-tag">Capitale</span>
+                        <h3 class="card-title">Lomé</h3>
+                        <p class="card-desc">Capitale dynamique au bord de l'océan Atlantique, mélange parfait de
+                            modernité et traditions.</p>
+                        <div class="card-meta"><span>📍 Sud</span><span>⭐ Incontournable</span></div><a href="lome.html"
+                            class="card-link">Découvrir →</a>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="card-image"><img src="images/destination-2.jpg" alt="Kpalimé">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content"><span class="card-tag">Nature</span>
+                        <h3 class="card-title">Kpalimé</h3>
+                        <p class="card-desc">Paradis des randonneurs et des amoureux de la nature.</p><a
+                            href="kpalime.html" class="card-link">Découvrir →</a>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="card-image"><img src="images/destination-3.jpg" alt="Kara">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content"><span class="card-tag">Culture</span>
+                        <h3 class="card-title">Kara</h3>
+                        <p class="card-desc">Terre des traditions ancestrales et de l'artisanat authentique.</p><a
+                            href="kara.html" class="card-link">Découvrir →</a>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="card-image"><img src="images/togoville-bridge.jpg" alt="Togoville Lac Togo">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content"><span class="card-tag">Histoire</span>
+                        <h3 class="card-title">Togoville</h3>
+                        <p class="card-desc">Berceau du vaudou et de l'histoire du pays.</p><a href="togoville.html"
+                            class="card-link">Découvrir →</a>
+                    </div>
+                </article>
+                <article class="destination-card">
+                    <div class="card-image"><img
+                            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600" alt="Fazao">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content"><span class="card-tag">Safari</span>
+                        <h3 class="card-title">Parc Fazao-Malfakassa</h3>
+                        <p class="card-desc">Le plus grand parc national du Togo.</p><a href="index.html#destinations"
+                            class="card-link">Découvrir →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Culture Section -->
+    <section class="culture" id="culture">
+        <div class="container">
+            <div class="culture-grid">
+                <div class="culture-content">
+                    <span class="section-tag">Culture</span>
+                    <h2 class="section-title">Une culture riche et vibrante</h2>
+                    <p class="culture-text">Le Togo est un véritable carrefour culturel où cohabitent plus de 40
+                        ethnies, chacune avec ses propres traditions uniques.</p>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🪘</div>
+                        <div class="highlight-content">
+                            <h4>Musique & Danse</h4>
+                            <p>Tams-tams, griots et danses rituelles.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">�</div>
+                        <div class="highlight-content">
+                            <h4>Vaudou & Spiritualité</h4>
+                            <p>Religion ancestrale, fétiches et forêts sacrées.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎭</div>
+                        <div class="highlight-content">
+                            <h4>Fêtes Traditionnelles</h4>
+                            <p>Evala, Akpema et cérémonies initiatiques.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🛖</div>
+                        <div class="highlight-content">
+                            <h4>Architecture Unique</h4>
+                            <p>Tatas Sombas classés à l'UNESCO.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🍛</div>
+                        <div class="highlight-content">
+                            <h4>Gastronomie</h4>
+                            <p>Fufu, sauces locales et saveurs du terroir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="culture-gallery">
+                    <div class="gallery-item gallery-item-1"><img src="images/culture-echassiers.jpg"
+                            alt="Danseurs sur échasses traditionnels">
+                    </div>
+                    <div class="gallery-item gallery-item-2"><img src="images/culture-artisanat.jpg"
+                            alt="Artisanat local et marché">
+                    </div>
+                    <div class="gallery-item gallery-item-3"><img src="images/culture-architecture.jpg"
+                            alt="Peintures et art local">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header"><span class="section-tag">Témoignages</span>
+                <h2 class="section-title">Ce qu'ils disent du Togo</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">"</div>
+                        <p>Un voyage extraordinaire ! L'accueil des Togolais est incroyable, et les paysages sont à
+                            couper le souffle.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <h4>Marie Koné</h4><span>Touriste - France</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">"</div>
+                        <p>Les cascades de Kpalimé sont magiques ! Une expérience inoubliable.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>Jean Dupont</h4><span>Aventurier - Belgique</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">"</div>
+                        <p>La cuisine togolaise est un vrai délice ! Je reviendrai certainement.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AO</div>
+                        <div class="author-info">
+                            <h4>Amina Ouedraogo</h4><span>Blogueuse - Canada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots"><button class="dot active" data-index="0"></button><button class="dot"
+                    data-index="1"></button><button class="dot" data-index="2"></button></div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="newsletter-content">
+                    <h2>Restez informé</h2>
+                    <p>Recevez nos meilleures offres et conseils de voyage.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="form-group"><input type="email" placeholder="Votre email" required><button type="submit"
+                            class="btn btn-primary"><span>S'inscrire</span></button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Planifiez votre voyage</h2>
+                    <p class="contact-desc">Notre équipe est à votre disposition pour organiser votre séjour de rêve au
+                        Togo.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p> Lomé</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+228 70 47 55 11</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>winnerreal26@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lun - Ven: 8h - 18h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg></a>
+                        <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                            </svg></a>
+                        <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" />
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                            </svg></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group"><label for="name">Nom</label><input type="text" id="name" required>
+                        </div>
+                        <div class="form-group"><label for="email">Email</label><input type="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group"><label for="subject">Sujet</label><select id="subject" required>
+                            <option value="">Sélectionnez</option>
+                            <option value="reservation">Réservation</option>
+                            <option value="info">Information</option>
+                            <option value="other">Autre</option>
+                        </select></div>
+                    <div class="form-group"><label for="message">Message</label><textarea id="message" rows="4"
+                            required></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-full"><span>Envoyer</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="#" class="footer-logo"><span class="logo-icon">🇹🇬</span><span
+                            class="logo-text">Togo<span class="logo-accent">Tourisme</span></span></a>
+                    <p class="footer-desc">Votre porte d'entrée vers l'Afrique de l'Ouest authentique.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="lome.html">Lomé</a></li>
+                        <li><a href="kpalime.html">Kpalimé</a></li>
+                        <li><a href="kara.html">Kara</a></li>
+                        <li><a href="togoville.html">Togoville</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="guide.html">Guide de voyage</a></li>
+                        <li><a href="visa.html">Visa & Formalités</a></li>
+                        <li><a href="climat.html">Climat</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Togo Tourisme. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg></button>
+    <script src="script.js"></script>
+</body>
+
+</html>

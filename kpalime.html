@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiter Kpalimé | Togo Tourisme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 10rem 0 6rem;
+            text-align: center;
+            color: var(--light);
+            position: relative;
+            background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.7)), url('images/destination-2.jpg') center/cover no-repeat;
+            background-attachment: fixed;
+        }
+
+        .page-title {
+            font-family: var(--font-serif);
+            font-size: clamp(3rem, 5vw, 4.5rem);
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .page-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .content-section {
+            padding: 5rem 0;
+        }
+
+        .dest-highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .dest-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .dest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .dest-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-family: var(--font-serif);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 450px;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-top: 2rem;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Dark mode overrides */
+        [data-theme="dark"] .dest-card {
+            background: var(--bg-dark-plz);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🇹🇬</span>
+                <span class="logo-text">Togo<span class="logo-accent">Tourisme</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#destinations" class="nav-link">Destinations</a></li>
+
+                <li><a href="index.html#culture" class="nav-link">Culture</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌗</button>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Kpalimé</h1>
+            <p class="page-subtitle">Nature luxuriante, cascades et artisanat au cœur de la région des Plateaux.</p>
+        </div>
+    </header>
+
+    <!-- Description -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nature & Aventure</span>
+                <h2 class="section-title">À propos de Kpalimé</h2>
+                <div class="section-desc">
+                    <p>Kpalimé est une destination incontournable pour les amoureux de la nature. Située à 120 km au
+                        nord de Lomé, elle offre un climat doux et des paysages verdoyants exceptionnels.</p>
+                    <br>
+                    <p>C'est également la capitale artistique du Togo, regroupant de nombreux artisans spécialisés dans
+                        le tissage, la sculpture sur bois et la poterie. La région est célèbre pour ses nombreuses
+                        cascades et ses sentiers de randonnée.</p>
+                </div>
+            </div>
+
+            <div class="dest-highlight-grid">
+                <div class="dest-card">
+                    <h3>🌊 Cascade de Kpimé</h3>
+                    <p>Une chute d'eau spectaculaire idéale pour se rafraîchir et pique-niquer, entourée d'une
+                        végétation dense.</p>
+                </div>
+                <div class="dest-card">
+                    <h3>⛰️ Mont Agou</h3>
+                    <p>Le plus haut sommet du Togo (986 m). Une randonnée jusqu'au sommet offre une vue panoramique
+                        inoubliable sur la région.</p>
+                </div>
+                <div class="dest-card">
+                    <h3>🦋 Forêt de Missahoé</h3>
+                    <p>Célèbre pour ses papillons et sa biodiversité, c'est un lieu magique pour les promenades en
+                        forêt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="content-section" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Localisation</span>
+                <h2 class="section-title">Explorer la Carte</h2>
+                <p class="section-desc">Kpalimé et ses environs.</p>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63351.63660312658!2d0.5975568285522584!3d6.908075596328362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10214a1fa3347b53%3A0xd64cc828695034c5!2sKpalim%C3%A9!5e0!3m2!1sfr!2stg"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="index.html" class="footer-logo"><span
+                            class="logo-icon">🇹🇬</span><span class="logo-text">Togo<span
+                                class="logo-accent">Tourisme</span></span></a>
+                    <p class="footer-desc">Votre porte d'entrée vers l'Afrique de l'Ouest authentique.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="lome.html">Lomé</a></li>
+                        <li><a href="kpalime.html">Kpalimé</a></li>
+                        <li><a href="kara.html">Kara</a></li>
+                        <li><a href="togoville.html">Togoville</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="guide.html">Guide de voyage</a></li>
+                        <li><a href="visa.html">Visa & Formalités</a></li>
+                        <li><a href="climat.html">Climat</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Togo Tourisme. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climat & Saisons | Togo Tourisme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            color: var(--light);
+            margin-bottom: 4rem;
+        }
+
+        .page-title {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .page-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+
+        .page-content {
+            padding-bottom: 4rem;
+        }
+
+        .content-block {
+            margin-bottom: 3rem;
+            background: var(--light);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .content-block h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-family: var(--font-serif);
+        }
+
+        .content-block p {
+            color: var(--gray);
+        }
+
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .weather-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .weather-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .weather-title {
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🇹🇬</span>
+                <span class="logo-text">Togo<span class="logo-accent">Tourisme</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#destinations" class="nav-link">Destinations</a></li>
+
+                <li><a href="index.html#culture" class="nav-link">Culture</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                🌗
+            </button>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header"
+        style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('images/hero-bg.jpg') center/cover;">
+        <div class="container">
+            <h1 class="page-title">Climat & Saisons</h1>
+            <p class="page-subtitle">Quand partir pour profiter au mieux du Togo ?</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="content-block">
+                <h2>☀️ Aperçu Général</h2>
+                <p>Le Togo jouit d'un climat tropical. Les températures sont généralement chaudes toute l'année,
+                    oscillant entre 27°C et 32°C. Le pays connaît deux grandes saisons : la saison des pluies et la
+                    saison sèche.</p>
+            </div>
+
+            <div class="content-block">
+                <h2>📅 Les Saisons</h2>
+                <div class="weather-grid">
+                    <div class="weather-card">
+                        <div class="weather-icon">🌧️</div>
+                        <h3 class="weather-title">Grande Saison des Pluies</h3>
+                        <p>Avril à Juillet</p>
+                    </div>
+                    <div class="weather-card">
+                        <div class="weather-icon">☁️</div>
+                        <h3 class="weather-title">Petite Saison Sèche</h3>
+                        <p>Août</p>
+                    </div>
+                    <div class="weather-card">
+                        <div class="weather-icon">🌦️</div>
+                        <h3 class="weather-title">Petite Saison des Pluies</h3>
+                        <p>Septembre à Octobre</p>
+                    </div>
+                    <div class="weather-card">
+                        <div class="weather-icon">☀️</div>
+                        <h3 class="weather-title">Grande Saison Sèche</h3>
+                        <p>Novembre à Mars</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h2>🏆 Meilleure Période</h2>
+                <p>La meilleure période pour visiter le Togo se situe entre <strong>novembre et février</strong>,
+                    pendant la grande saison sèche. L'air est plus sec et les températures sont agréables.</p>
+                <p>C'est également la période idéale pour observer la faune dans les parcs nationaux.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="index.html" class="footer-logo"><span
+                            class="logo-icon">🇹🇬</span><span class="logo-text">Togo<span
+                                class="logo-accent">Tourisme</span></span></a>
+                    <p class="footer-desc">Votre porte d'entrée vers l'Afrique de l'Ouest authentique.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="lome.html">Lomé</a></li>
+                        <li><a href="kpalime.html">Kpalimé</a></li>
+                        <li><a href="kara.html">Kara</a></li>
+                        <li><a href="togoville.html">Togoville</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="guide.html">Guide de voyage</a></li>
+                        <li><a href="visa.html">Visa & Formalités</a></li>
+                        <li><a href="climat.html">Climat</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Togo Tourisme. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
