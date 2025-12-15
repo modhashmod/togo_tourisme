@@ -1,0 +1,8 @@
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Force trailing slash for directories / Forcer le slash de fin pour les répertoires
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*[^/])$ %{REQUEST_URI}/ [L,R=301]
+</IfModule>
